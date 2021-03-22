@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Oswald', sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-color: #04181cc2;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+.menu {
+    width: 600px;
+    margin: 100px auto;
+    background-color: #04181c;
+}
+.menu ul{
+    list-style: none;
+    text-align: center;
+}
+.menu ul li{
+    display: inline-block;
+    border-right: 1px solid #a1a199;
+    position: relative;
+}
+.menu ul li:last-child{
+    border-right: 0;
+}
+.menu ul li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 30px;
+}
+.menu ul li a:hover{
+    color: #965624;
+}
+/* First Level Menu*/
+.menu ul li ul {
+    position: absolute;
+    background-color: #04181c;
+    width: 128px;
+    opacity: 0;
+    visibility: hidden;
+    top:120%;
+    transition: .3s; 
+}
+.menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top:100%;
+}
+.menu ul li ul li{
+    border-right: 0;
+    border-bottom: 1px solid #a1a199;
+}
+.menu ul li ul li:last-child{
+    border-bottom: 0;
+}
+/* Second Level Menu*/
+.menu ul li ul li ul.second-level{
+    position: absolute;
+    left: 100%;
+    top: 0;
+    opacity: 0;
+    width: 105px;
+    visibility: hidden;
+    transition: .3s;
+}
+.menu ul li ul li:hover ul.second-level{
+    opacity: 1;
+    visibility: visible;
+    left: 95%;
+} 
