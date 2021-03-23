@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Hind', sans-serif;
+}
+.price{
+    width: 1000px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.single-price {
+    text-align: center;
+    box-shadow: 0 0 2px rgb(0, 0, 0, 0.3);
+    padding: 30px;
+    line-height: 35px;
+    flex-basis: 300px;
+}
+.single-price h4 {
+    font-size: 45px;
+    font-weight: 600;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+#back h4{
+    background-color: #e84545;
+    color: #fff;
+}
+.single-price span {
+    font-size: 20px;
+}
+.single-price .title {
+    text-transform: capitalize;
+    font-size: 45px;
+    margin: 0px 20px;
+    padding: 10px;
+    font-weight: 700;
+}
+.single-price .plan {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: 600;
+}
+.single-price ul{
+    list-style: none;
+}
+.single-price ul li {
+    font-size: 18px;
+    border-bottom: 1px solid #e845453f;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.single-price ul li:last-child {
+    border-bottom: 0;
+}
+.single-price ul li span{
+    font-weight: 700;
+}
+.single-price a {
+    text-decoration: none;
+    background-color: e84545;
+    color: #fff;
+    padding: 10px 30px;
+    display: inline-block;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-top: 15px;
+    border: 1px transparent;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+.single-price a:hover{
+    background-color: transparent;
+    border: 1px solid #e84545;
+    color: #e84545;
+}
