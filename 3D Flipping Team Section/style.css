@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.team{
+    width: 1200px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.single-team{
+    flex-basis: 320px;
+    height: 350px;
+    position: relative;
+    perspective: 1000px;
+    transition: 1s;
+}
+.card{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+.team-front{
+    background-size: cover;
+    background-position: center;
+    transition: 1s;
+}
+.team-back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,.7);
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+.team-content{
+    text-align: center;
+    color: #fff;
+}
+.team-content h4{
+    font-size: 35px;
+    text-transform: capitalize;
+}
+.team-content h4 span{
+    display: block;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.team-content a {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding-top: 6px;
+}
+.team-content a i{
+    color: #fff;
+}
+.single-team:hover .team-front{
+    transform: rotateY(180deg);
+}
+.single-team:hover .team-back{
+    transform: rotateY(0deg);
+}
